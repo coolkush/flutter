@@ -59,11 +59,13 @@ class OverflowBar extends MultiChildRenderObjectWidget {
     this.spacing = 0.0,
     this.alignment,
     this.overflowSpacing = 0.0,
+    this.clipBehavior= Clip.antiAlias,
     this.overflowAlignment = OverflowBarAlignment.start,
     this.overflowDirection = VerticalDirection.down,
     this.textDirection,
     super.children,
   });
+   final Clip clipBehavior;
 
   /// The width of the gap between [children] for the default
   /// horizontal layout.
